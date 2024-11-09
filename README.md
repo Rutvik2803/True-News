@@ -7,7 +7,7 @@ Problem Statement :- In this very fast moving world and internet driven world, t
 
 Solution :- TrueNews is a web-scrapping solution which is designed to track and analyze all the given data across the selected website. By web scrapping we can give real time updates and responses to the user. This system is used to track new updates to enable the users to act on latest news.
 
-•	Challenges Faced
+•	Challenges-Faced
 
 
 
