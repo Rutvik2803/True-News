@@ -7,7 +7,8 @@ A webs scraping project for Hack This Fall 2024 hackathon virtual edition.
 
 <h3>Solution</h3> TrueNews is a web-scrapping solution which is designed to track and analyze all the given data across the selected website. By web scrapping we can give real time updates and responses to the user. This system is used to track new updates to enable the users to act on latest news.
 
-<h2>•	Challenges-Faced</h2>
+![Screenshot 2024-11-09 220907](https://github.com/user-attachments/assets/65df3614-ac14-480f-9168-4e19a50188c3)
+
 
 
 
