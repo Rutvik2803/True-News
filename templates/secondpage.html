@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrueNews</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='secondpage.css') }}">
+</head>
+
+<body>
+    <div class="form-container">
+
+        <div class="form-content">
+            <form method="POST" action="{{ url_for('home') }}">
+                <h1>News Verification Tool</h1>
+                <label for="news_title">Enter the news headline or title:</label><br><br>
+                <input type="text" id="news_title" name="news_title" placeholder="Enter news title here" required>
+                <br><br>
+                <button type="submit">Verify News</button>
+            </form>
+        </div>
+
+
+        <div class="photo">
+            <img src="{{ url_for('static', filename='secondpage.png') }}" alt="Illustrative image">
+        </div>
+    </div>
+
+
+    <div class="background-animation">
+        <lottie-player src="https://lottie.host/5d65413b-4bb5-426b-be7a-98d34e689392/kmb6CU4nyU.json"
+                       background="transparent"
+                       speed="1"
+                       loop
+                       autoplay>
+        </lottie-player>
+    </div>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.8/dist/lottie-player.js"></script>
+</body>
+
+</html>
+
+
+
+

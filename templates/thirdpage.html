@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrueNews</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='thirdpage.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="result-card">
+            <h1>Verification Result</h1>
+            <p>
+                {% if 'Link:' in result %}
+                {{ result.split('Link:')[0] }} <br>
+                <a href="{{ result.split('Link:')[1].strip() }}" target="_blank" class="read-link">Read Full Article</a>
+                {% else %}
+                {{ result }}
+                {% endif %}
+            </p>
+        </div>
+        <button id="back-button" onclick="redirectToHome()">Go Back</button>
+    </div>
+    <script src="{{ url_for('static', filename='thirdpage.js') }}"></script>
+</body>
+</html>

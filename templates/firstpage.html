@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrueNews</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='firstpage.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="background-animation">
+            <lottie-player src="https://lottie.host/d3a54590-2aab-450d-a4bd-d2839314aedb/XIJLXLFnqg.json" background="transparent" speed="1" loop autoplay></lottie-player>
+        </div>
+        <h1>Welcome to <span class="highlight">TrueNews</span></h1>
+        <p class="typing-animation">Your daily source of authentic news, Verified and True...</p>
+        <p class="description">TrueNews is committed for bringing you the latest news updates and in-depth stories from around the world. Stay informed with accurate information and responsible journalism.</p>
+        <button id="start-button" onclick="redirectToHome()">Start</button>
+    </div>
+    <script src="{{ url_for('static', filename='firstpage.js') }}"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.8/dist/lottie-player.js"></script>
+    <script>
+    function redirectToHome() {
+        window.location.href = "{{ url_for('home') }}";
+    }
+</script>
+
+</body>
+</html>

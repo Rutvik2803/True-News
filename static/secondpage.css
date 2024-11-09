@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #f4f4f4;
+}
+
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    padding: 5% 2%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.form-content {
+    width: 60%;
+    padding-right: 20px;
+}
+
+h1 {
+    color: #ff5733;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+label {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333333;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+input:hover {
+    border: 0.5px solid #333333;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 19px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #333333;
+    color: #ff5733;
+}
+
+.photo {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    height: 300px;
+    width: auto;
+    margin-left: 20px;
+}
+
+.background-animation {
+    position: fixed;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.background-animation lottie-player {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .form-container {
+        flex-direction: column;
+        width: 90%;
+        padding: 5%;
+        text-align: center;
+    }
+    body {
+        justify-content: flex-start;
+    }
+
+    .background-animation lottie-player {
+        height: 60%;
+    }
+
+    .form-content,
+    .photo {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    img {
+        height: 200px;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    .form-container {
+        flex-direction: column;
+        width: 80%;
+        padding: 5%;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    img {
+        height: 250px;
+    }
+}
+
+
+
+
+

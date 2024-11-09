@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url("thirdpage.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    padding: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.result-card {
+    padding: 5%;
+    border-radius: 10px;
+}
+
+.result-card p {
+    color: #333333;
+    line-height: 1.6;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+h1 {
+    font-size: 30px;
+    color: #111111;
+}
+
+.read-link {
+    color: #eeef20;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.read-link:hover {
+    text-decoration: underline;
+}
+
+button {
+    margin-top: 1px;
+    padding: 10px 20px;
+    background-color: #ccff00;
+    color: #111111;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #111111;
+    color: #ccff00;
+}
+
